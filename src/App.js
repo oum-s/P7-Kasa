@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route, Link,} from "react-router-dom";
-// import App from './App';
 import Home from './pages/Home';
 import Property from './pages/Property';
 import About from './pages/About';
@@ -16,7 +15,6 @@ ReactDOM.render(
         <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-              {/* <Route index element={<Home />} /> */}
             <Route path="/about" element={<About />} />
             <Route path="/property" element={<Property />} />
               <Route path=":id" element={<Property />} />
